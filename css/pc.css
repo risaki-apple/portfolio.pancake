@@ -102,8 +102,8 @@ img {
 }
 
 .bgr_btn.close .bgr_top {
-  -webkit-transform: translate(-50%, 10px) rotate(45deg);
-          transform: translate(-50%, 10px) rotate(45deg);
+  -webkit-transform: translate(-50%, 10px) rotate(45deg) !important;
+          transform: translate(-50%, 10px) rotate(45deg) !important;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
@@ -117,8 +117,8 @@ img {
 }
 
 .bgr_btn.close .bgr_bottom {
-  -webkit-transform: translate(-50%, -8px) rotate(-45deg);
-          transform: translate(-50%, -8px) rotate(-45deg);
+  -webkit-transform: translate(-50%, -8px) rotate(-45deg) !important;
+          transform: translate(-50%, -8px) rotate(-45deg) !important;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
