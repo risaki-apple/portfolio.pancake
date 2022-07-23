@@ -1,0 +1,24 @@
+.slick-slide {
+  margin: 0 10px;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.slider {
+  margin: 0 10px;
+}
+
+.topics_box ul .slick-list .slick-track .slick-slide li h2 {
+  padding: 30px 20px 10px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+}
+
+.topics_box ul .slick-list .slick-track .slick-slide li p {
+  padding: 0 20px 30px 20px;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  color: rgba(0, 0, 0, 0.48);
+}
+/*# sourceMappingURL=slick-custom.css.map */
