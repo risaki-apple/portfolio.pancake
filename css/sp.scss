@@ -1,0 +1,74 @@
+@media screen and (max-width: 767px) {
+  .wrap {
+    .main {
+      .sec {
+        padding: 0;
+        .u-flex {
+          display: block;
+          width: 100%;
+          .sec_img_box {
+            width: 100%;
+            img {
+              width: 100%;
+            }
+          }
+          .sec_text_box {
+            width: 100%;
+          }
+        }
+      }
+      .sec.pickUp {
+        padding: 40px 16px 50px 16px;
+        .sec_img_box {
+          width: 90%;
+          margin: auto;
+          img {
+            width: 100%;
+          }
+        }
+        .sec_text_box {
+          width: 90%;
+          padding: 0;
+          margin: auto;
+          margin-top: 30px;
+        }
+      }
+      .gift {
+        .u-flex {
+          display: block;
+
+          .gift_img_box {
+            width: 100%;
+            img {
+              width: 100%;
+            }
+          }
+          .gift_text_box {
+            width: 100%;
+
+            .btn_more {
+              width: 50%;
+            }
+          }
+        }
+      }
+      .greenCard {
+        .u-flex {
+          display: block;
+
+          .greenCard_img {
+            width: 90%;
+            margin: auto;
+            img {
+              width: 100%;
+            }
+          }
+          .greenCard_text {
+            width: 90%;
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+}

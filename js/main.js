@@ -14,7 +14,6 @@ $(function () {
     $('.bgr_btn').on('click', function () {
         $('.bgr_btn').toggleClass('close');
         $('.nav_wrapper').toggleClass('slide-in');
-        $('body').toggleClass('noscroll'); // 追記
     });
 });
 
@@ -26,18 +25,19 @@ $('.topics_list').slick({
     arrows: true,
     responsive: [
         {
-          breakpoint: 1024,
-          settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 2
-          }
-        },
-        {
-          breakpoint: 766,
+          breakpoint: 1024, // 768〜1023px以下のサイズに適用
           settings: {
             arrows: false,
+            centerMode: true,
+            pauseOnFocus: false,
+            pauseOnHover: false,
+            slidesToShow: 2          }
+        },
+        {
+          breakpoint: 768, // 767px以下のサイズに適用
+          settings: {
+            arrows: false,
+            dots: true,
             centerMode: true,
             pauseOnFocus: false,
             pauseOnHover: false,
