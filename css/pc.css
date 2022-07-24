@@ -257,11 +257,11 @@ img {
 }
 
 .wrap .main {
-  margin-top: 84px;
+  margin-top: 79px;
+  width: 100%;
 }
 
 .wrap .main .top_img {
-  width: 100%;
   position: relative;
 }
 
