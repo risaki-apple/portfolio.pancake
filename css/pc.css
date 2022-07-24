@@ -230,10 +230,10 @@ img {
 .wrap .header .nav_wrapper nav ul {
   display: block;
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 30%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translateX(-30%) translateY(-30%);
+          transform: translateX(-30%) translateY(-30%);
 }
 
 .wrap .header .nav_wrapper nav ul li {
@@ -530,9 +530,9 @@ img {
 }
 
 .wrap .main .gift .gift_text_box .btn_more {
-  margin: 0 75px;
+  margin-left: 75px;
   position: relative;
-  width: 70%;
+  width: 60%;
   padding: 15px 40px 15px 24px;
   border: 1px solid #bbbbbb;
   text-align: left;

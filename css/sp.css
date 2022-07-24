@@ -1,4 +1,29 @@
 @media screen and (max-width: 767px) {
+  .wrap .header {
+    padding-left: 10px;
+  }
+  .wrap .header_logo {
+    line-height: 39px;
+  }
+  .wrap .header_logo a {
+    font-size: 15px;
+  }
+  .wrap .header_login {
+    right: 80px;
+  }
+  .wrap .header .bgr_btn {
+    right: 10px;
+  }
+  .wrap .header .nav_wrapper {
+    width: 80vw;
+    height: 100vh;
+  }
+  .wrap .main .about {
+    margin-bottom: 50px;
+  }
+  .wrap .main .about .more_link {
+    top: 1210px;
+  }
   .wrap .main .sec {
     padding: 0;
   }
@@ -14,22 +39,28 @@
   }
   .wrap .main .sec .u-flex .sec_text_box {
     width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
   .wrap .main .sec.pickUp {
-    padding: 40px 16px 50px 16px;
+    padding: 40px 0 50px 0;
   }
   .wrap .main .sec.pickUp .sec_img_box {
-    width: 90%;
+    width: 80%;
     margin: auto;
   }
   .wrap .main .sec.pickUp .sec_img_box img {
     width: 100%;
   }
   .wrap .main .sec.pickUp .sec_text_box {
-    width: 90%;
+    width: 80%;
     padding: 0;
     margin: auto;
     margin-top: 30px;
+  }
+  .wrap .main .sec.pickUp .sec_text_box .inner .btn_more {
+    width: 90%;
+    margin: auto;
   }
   .wrap .main .gift .u-flex {
     display: block;
@@ -43,8 +74,15 @@
   .wrap .main .gift .u-flex .gift_text_box {
     width: 100%;
   }
+  .wrap .main .gift .u-flex .gift_text_box h2 {
+    padding: 14px;
+  }
+  .wrap .main .gift .u-flex .gift_text_box p {
+    padding: 14px;
+  }
   .wrap .main .gift .u-flex .gift_text_box .btn_more {
-    width: 50%;
+    width: 70%;
+    margin: 0 auto;
   }
   .wrap .main .greenCard .u-flex {
     display: block;
@@ -59,6 +97,19 @@
   .wrap .main .greenCard .u-flex .greenCard_text {
     width: 90%;
     margin: auto;
+  }
+  .wrap .main .journal .journal_topImg_box {
+    width: 90%;
+  }
+  .wrap .main .journal ul {
+    width: 90%;
+  }
+  .wrap .main .magazine_inner .magazine_detail .magazin_mail_form input {
+    width: 100%;
+  }
+  .wrap .main .magazine_inner .magazine_detail .magazin_mail_form button {
+    margin-top: 10px;
+    margin-left: 0;
   }
 }
 /*# sourceMappingURL=sp.css.map */

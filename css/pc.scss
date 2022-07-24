@@ -209,10 +209,9 @@ img {
         ul {
           display: block;
           position: absolute;
-          top: 40%;
+          top: 30%;
           left: 30%;
-          transform: translate(-50%, -50%);
-
+          transform: translateX(-30%) translateY(-30%);
           li {
             margin-bottom: 30px;
 
@@ -474,9 +473,9 @@ img {
           letter-spacing: 0.03em;
         }
         .btn_more {
-          margin: 0 75px;
+          margin-left: 75px;
           position: relative;
-          width: 70%;
+          width: 60%;
           padding: 15px 40px 15px 24px;
           border: 1px solid rgb(187, 187, 187);
           text-align: left;
