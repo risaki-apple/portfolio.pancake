@@ -1,7 +1,7 @@
 //ヘッダー隠れ防ぐ
 $('a[href^="#"]').click(function() {
     var speed = 800;
-    var adjust = 100;
+    var adjust = 79;
     var href= $(this).attr("href");
     var target = $(href == "#" || href == "" ? 'html' : href);
     var position = target.offset().top - adjust;
