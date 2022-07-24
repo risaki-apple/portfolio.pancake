@@ -219,6 +219,9 @@ img {
             a {
               color: #fff;
               font-size: 15px;
+              &:hover {
+                opacity: 0.5;
+              }
               span {
                 margin-left: 15px;
                 font-size: 12px;
