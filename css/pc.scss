@@ -62,6 +62,7 @@
   transform: rotate(54deg);
 }
 
+//事前指定
 a,
 button {
   cursor: pointer;
@@ -83,6 +84,43 @@ img {
   justify-content: right;
 }
 
+//下からスライドイン
+.slideIn {
+  animation: SlideIn 1000ms;
+}
+
+@keyframes SlideIn {
+  0% {
+    opacity: 0; /*初期状態では透明に*/
+    transform: translate(0, 3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.trans {
+  transform: translate(0, 3rem);
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 1000ms;
+  transition-timing-function: ease;
+}
+.show {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+.delay250 {
+  transition-delay: 250ms;
+}
+.delay500 {
+  transition-delay: 500ms;
+}
+.delay750 {
+  transition-delay: 750ms;
+}
+
+//バーガーメニュー
 .nav_wrapper.fade {
   visibility: visible;
   opacity: 1;
@@ -113,6 +151,7 @@ img {
   }
 }
 
+//wrap
 .wrap {
   .header {
     padding: 20px 60px;
@@ -250,6 +289,7 @@ img {
         padding: 10px 0;
         position: absolute;
         top: 0;
+        z-index: 50;
         p {
           color: #fff;
           opacity: 1;
@@ -268,7 +308,7 @@ img {
 
         p {
           color: #fff;
-          font-size: 50px;
+          font-size: 40px;
           font-weight: bold;
           letter-spacing: 0.2em;
           text-shadow: 1px 2px 3px rgb(72, 78, 77);
@@ -700,6 +740,7 @@ img {
               font-size: 16px;
               font-weight: 400;
               letter-spacing: 2px;
+              border-style: none;
             }
           }
         }

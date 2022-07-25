@@ -18,6 +18,9 @@
     width: 80vw;
     height: 100vh;
   }
+  .wrap .main .top_img .top_img_text p {
+    font-size: 30px;
+  }
   .wrap .main .about {
     margin-bottom: 50px;
   }
@@ -104,12 +107,8 @@
   .wrap .main .journal ul {
     width: 90%;
   }
-  .wrap .main .magazine_inner .magazine_detail .magazin_mail_form input {
-    width: 100%;
-  }
-  .wrap .main .magazine_inner .magazine_detail .magazin_mail_form button {
-    margin-top: 10px;
-    margin-left: 0;
+  .wrap .main .magazine_inner {
+    width: 80%;
   }
 }
 /*# sourceMappingURL=sp.css.map */

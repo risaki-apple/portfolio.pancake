@@ -17,6 +17,22 @@ $(function () {
     });
 });
 
+//下からスライドイン
+$(window).on('scroll', function(){
+  var trans = $('.trans');
+  var show = 'show';
+
+  trans.each(function(){
+    var transOffset = $(this).offset().top;
+    var scrollPos = $(window).scrollTop();
+    var wh = $(window).height();
+
+    if(scrollPos > transOffset - wh + (wh / 2)) {
+      $(this).addClass(show);
+    }
+  });
+});
+
 //slider
 $('.topics_list').slick({
     infinite: true,

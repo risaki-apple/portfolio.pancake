@@ -20,6 +20,13 @@
       }
     }
     .main {
+      .top_img {
+        .top_img_text {
+          p {
+            font-size: 30px;
+          }
+        }
+      }
       .about {
         margin-bottom: 50px;
         .more_link {
@@ -119,17 +126,7 @@
       }
       .magazine {
         &_inner {
-          .magazine_detail {
-            .magazin_mail_form {
-              input {
-                width: 100%;
-              }
-              button {
-                margin-top: 10px;
-                margin-left: 0;
-              }
-            }
-          }
+          width: 80%;
         }
       }
     }
