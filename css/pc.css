@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .arrow-right.icon {
   color: #000;
   position: absolute;
@@ -85,6 +86,72 @@ img {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
+}
+
+.slideIn {
+  -webkit-animation: SlideIn 1000ms;
+          animation: SlideIn 1000ms;
+}
+
+@-webkit-keyframes SlideIn {
+  0% {
+    opacity: 0;
+    /*初期状態では透明に*/
+    -webkit-transform: translate(0, 3rem);
+            transform: translate(0, 3rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes SlideIn {
+  0% {
+    opacity: 0;
+    /*初期状態では透明に*/
+    -webkit-transform: translate(0, 3rem);
+            transform: translate(0, 3rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.trans {
+  -webkit-transform: translate(0, 3rem);
+          transform: translate(0, 3rem);
+  opacity: 0;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+.show {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+}
+
+.delay250 {
+  -webkit-transition-delay: 250ms;
+          transition-delay: 250ms;
+}
+
+.delay500 {
+  -webkit-transition-delay: 500ms;
+          transition-delay: 500ms;
+}
+
+.delay750 {
+  -webkit-transition-delay: 750ms;
+          transition-delay: 750ms;
 }
 
 .nav_wrapper.fade {
@@ -277,6 +344,7 @@ img {
   padding: 10px 0;
   position: absolute;
   top: 0;
+  z-index: 50;
 }
 
 .wrap .main .top_img .top_img_label p {
@@ -299,7 +367,7 @@ img {
 
 .wrap .main .top_img .top_img_text p {
   color: #fff;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
   letter-spacing: 0.2em;
   text-shadow: 1px 2px 3px #484e4d;
@@ -789,6 +857,7 @@ img {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 2px;
+  border-style: none;
 }
 
 .wrap .main .magazine_inner .magazine_bottom {
