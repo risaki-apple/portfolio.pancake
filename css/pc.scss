@@ -126,8 +126,40 @@ img {
   opacity: 1;
 }
 
+body.noscroll {
+  overflow: hidden;
+  height: 100%;
+}
+html {
+  overflow: auto;
+  height: 100%;
+}
+
 .nav_wrapper.slide-in {
   transform: translateX(0) !important;
+  nav {
+    visibility: visible !important;
+    /* 縦方向のスクロールバーを表示 */
+    overflow-y: scroll;
+
+    /* IE などのスクロールバーの色設定 */
+    scrollbar-face-color: rgba(255, 255, 255, 0.3);
+    scrollbar-track-color: rgba(255, 255, 255, 0.1);
+
+    /* スマホ用の慣性スクロール */
+    -webkit-overflow-scrolling: touch;
+
+    /* Chrome などでは細めのきれいなスクロールバーを表示 */
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.3);
+    }
+    &::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.1);
+    }
+  }
 }
 
 .bgr_btn.close {
@@ -247,10 +279,7 @@ img {
 
         ul {
           display: block;
-          position: absolute;
-          top: 30%;
-          left: 30%;
-          transform: translateX(-30%) translateY(-30%);
+          padding: 80px 30px 50px 40px;
           li {
             margin-bottom: 30px;
 

@@ -14,6 +14,7 @@ $(function () {
     $('.bgr_btn').on('click', function () {
         $('.bgr_btn').toggleClass('close');
         $('.nav_wrapper').toggleClass('slide-in');
+        $('body').toggleClass('noscroll');
     });
 });
 
