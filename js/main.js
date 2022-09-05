@@ -16,6 +16,9 @@ $(function () {
         $('.nav_wrapper').toggleClass('slide-in');
         $('body').toggleClass('noscroll');
     });
+    $('.nav_list_item>a').on('click', function(event) {
+      $('.bgr_btn').trigger('click');
+    });
 });
 
 //下からスライドイン
